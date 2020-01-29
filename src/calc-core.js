@@ -69,7 +69,7 @@ export async function evaluate(arrFormula) {
 
   async function getTotal(formula,num1,num2){
     // let addData = await fetch(`https://ahsan-calc-spring.herokuapp.com/${formula}?firstNum=${num2}&secondNum=${num1}`,{method:'POST',headers:{'Content-Type': 'application/json'},mode:'cors'});
-    let addData = await axios.post(`https://cors-anywhere.herokuapp.com/https://ahsan-calc-spring.herokuapp.com/${formula}?firstNum=${num2}&secondNum=${num1}`)
+    let addData = await axios.post(`https://cors-anywhere.herokuapp.com/https://ahsan-calc-spring.herokuapp.com/${formula}?firstNum=${num1}&secondNum=${num2}`)
     console.log(addData.data.total)
     // let addjson = await addData.json()
     console.log("hello");
